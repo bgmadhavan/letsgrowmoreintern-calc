@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/calculator.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc" >
+        <div class="row justify-content-center">
+            <input type="text" placeholder="0" disabled id="ipfield">
+        </div>
+        <div class="press">
+            <div class="row justify-content-end m-1 gx-2">
+                <div class="col-3">
+                    <button class="clear" onclick="allclr()">AC</button>
+                </div>
+                
+                <div class="col-3">
+                    <button class="clear" onclick="del()">DEL</button>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <button class="num" onclick="display('**')">^</button>
+                </div>
+            </div>
+            <div class="row m-1 gx-2">
+                <div class="col-3">
+                    <button class="num" onclick="display(7)">7</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display(8)">8</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display(9)">9</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display('+')">+</button>
+                </div>
+            </div>
+            <div class="row m-1 gx-2">
+                <div class="col-3">
+                    <button class="num" onclick="display(4)">4</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display(5)">5</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display(6)">6</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display('-')">-</button>
+                </div>
+            </div>
+            <div class="row m-1 gx-2">
+                <div class="col-3">
+                    <button class="num" onclick="display(1)">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display(2)">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display(3)">3</button>
+                </div>
+                <div class="col-3">
+                        <button class="num" onclick="display('*')">x</button>
+                </div>
+            </div>
+            <div class="row m-1 gx-2">
+                <div class="col-3">
+                    <button class="num" onclick="display(0)">0</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display('.')">.</button>
+                </div>
+                <div class="col-3">
+                    <button class="num" onclick="display('/')">/</button>
+                </div>
+                <div class="col-3">
+                    <button class="equal" onclick="result()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/calculator.js"></script>
+</body>
+</html>
